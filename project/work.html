@@ -294,7 +294,22 @@
       background-position: center bottom;
       background-repeat: no-repeat;
       top: 65vw;
-      left: 7vw;
+      left: 5vw;
+      z-index: 3;
+      
+    }
+    .nemo3 {
+      background-image: url('pic/work/nemo1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 8vw;
+      width: 8vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 120vw;
+      left: 75vw;
       z-index: 3;
       
     }
@@ -850,7 +865,23 @@
       background-position: center bottom;
       background-repeat: no-repeat;
       top: 65vw;
-      left: 10vw;
+      left: 5vw;
+      z-index: 3;
+
+      
+    }
+    .nemo3 {
+      background-image: url('pic/work/nemo1.png');
+      margin: 0;
+      border: 0;
+      padding: 0;
+      height: 8vw;
+      width: 8vw;
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 100vw;
+      left: 75vw;
       z-index: 3;
       
     }
@@ -1175,6 +1206,7 @@
       <div id="b2" class="fish bluf2"></div>
       <div id="b3" class="fish bluf3"></div>
       <div id="n2" class="fish nemo2"></div>
+       <div id="n3" class="fish nemo3"></div>
       <h1 id="work_1">ผลงาน</h1>
       
       <div><h1 class="topic t1">การอนุรักษณ์ทรัพยากรธรรมชาติท้องทะเล</h1></div>
@@ -1229,11 +1261,12 @@
     function fishtank() {
       let y = window.pageYOffset - d2.offsetTop + d2.offsetHeight;
       console.log(y);
-      b1.style.marginTop = `-${y*0.0035}vw`;
-      n1.style.marginTop = `-${y*0.0055}vw`;
-      b2.style.marginTop = `-${y*0.0065}vw`;
-      b3.style.marginTop = `-${y*0.0045}vw`;
-      n2.style.marginTop = `-${y*0.0060}vw`;
+      b1.style.marginTop = `-${y*0.0135}vw`;
+      n1.style.marginTop = `-${y*0.0105}vw`;
+      b2.style.marginTop = `-${y*0.0205}vw`;
+      b3.style.marginTop = `-${y*0.0105}vw`;
+      n2.style.marginTop = `-${y*0.0120}vw`;
+      n3.style.marginTop = `-${y*0.0300}vw`;
       
     }
     window.addEventListener("scroll", fishtank);
